@@ -8,9 +8,15 @@ public class Brand : EntityBase
   {
 
   }
-  public Brand(int parentId, string name, int priorty)
+  public Brand(string name)
   {
     Name = name;
   }
-  public required string Name { get; set; }
+  // public Brand(int parentId, string name, int priorty)
+  // {
+  //   Name = name;
+  // }
+  public string Name { get; set; }
+
+  public ICollection<Product> Products { get; set; }
 }
