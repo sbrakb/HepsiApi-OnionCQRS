@@ -4,13 +4,13 @@
 
 ## 📋 İçindekiler
 
-- [Özellikler](#özellikler)
-- [Mimari](#mimari)
-- [Teknolojiler](#teknolojiler)
-- [Kurulum](#kurulum)
-- [Proje Yapısı](#proje-yapısı)
-- [Kullanım](#kullanım)
-- [API Endpoints](#api-endpoints)
+- Özellikler
+- Mimari
+- Teknolojiler
+- Kurulum
+- Proje Yapısı
+- Kullanım
+- API Endpoints
 
 ## ✨ Özellikler
 
@@ -52,7 +52,7 @@ Bu proje **Onion Architecture** prensiplerine uygun olarak geliştirilmiştir:
 │  │   (EF Core & Database)      │    │
 │  ├─────────────────────────────┤    │
 │  │   HepsiApi.Infrastructure   │    │
-│  │  (Redis, JWT, SendGrid)     │    │
+│  │     (Redis, JWT)           │    │
 │  └─────────────────────────────┘    │
 └─────────────────────────────────────┘
 ```
@@ -77,7 +77,7 @@ Bu proje **Onion Architecture** prensiplerine uygun olarak geliştirilmiştir:
 - **AutoMapper 14.0.0** - Object-to-object mapping
 - **Bogus 35.6.3** - Test data generation
 
-### Caching & External Services
+### Caching & Tools
 
 - **StackExchange.Redis 2.8.41** - Redis caching
 
@@ -313,7 +313,6 @@ dotnet ef database update --project Infrastructure/HepsiApi.Persistence --startu
 1. Connection string'i production veritabanına güncelleyin
 2. JWT secret key'ini güvenli bir değerle değiştirin
 3. Redis connection string'ini ayarlayın
-4. SendGrid API key'ini konfigüre edin
 
 ## 📄 Lisans
 
